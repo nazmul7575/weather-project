@@ -17,7 +17,7 @@
 
   <div class="w-full min-h-screen bg-gradient-to-tr from-slate-600 to-sky-950">
     <div id="weather-wrapper"
-      class="absolute top-[50%] left-[50%] -translate-x-[50%] translate-y-[50%] w-[350px] h-auto bg-black/50 backdrop-blur-lg p-10 rounded-tr-3xl rounded-bl-3xl">
+      class="absolute left-[50%] -translate-x-[50%] translate-y-[50%] w-[350px] h-auto bg-black/50 backdrop-blur-lg p-10 rounded-tr-3xl rounded-bl-3xl">
       <div class="">
         <div id="search" class="flex items-center gap-3">
           <input type="text" class="bg-white w-full py-2 px-5 rounded-full" placeholder="Enter your city here">
@@ -27,8 +27,14 @@
           <h1>Please enter correct city</h1>
         </div>
       </div>
-      <div id="weather">
-
+      <div id="weather" class="flex flex-col items-center justify-center">
+        <div class="flex items-center gap-10">
+          <img src="/src/images/clouds.png" alt="clouds-image" width="100px" height="100px">
+          <div class="flex flex-col items-center">
+            <span class="text-white text-4xl font-bold">44 °C</span>
+            <span class="text-2xl text-white"> Dubai, UAE</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
